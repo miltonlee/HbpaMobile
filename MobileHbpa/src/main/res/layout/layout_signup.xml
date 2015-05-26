@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+    
+     <ImageView
+        android:id="@+id/iv_signup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="62dp"
+        android:background="@drawable/hbpa_a_normal" />
+    
+    <LinearLayout
+        android:id="@+id/liner_signup_account"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_signup"
+        android:layout_marginTop="80dp"
+        android:orientation="horizontal" 
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp">
+
+        <TextView
+            android:background="@drawable/tv_login_leftradius"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="18sp"
+            android:text="@string/tv_login_account" 
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/et_login_rightradius"
+            android:ems="10"
+            android:singleLine="true"
+            android:hint="用户名"
+            android:inputType="text"
+            android:padding="4dp"
+            android:textColorHint="#AAAAAA"
+            android:textSize="18sp" >
+            <requestFocus />
+        </EditText>
+    </LinearLayout>
+    <LinearLayout 
+        android:id="@+id/liner_signup_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/liner_signup_account"
+        android:layout_marginTop="12dp"
+        android:orientation="horizontal" 
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp">
+
+        <TextView
+            android:background="@drawable/tv_login_leftradius"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="18sp"
+            android:text="@string/tv_login_pwd" 
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/et_login_rightradius"
+            android:ems="10"
+            android:hint="密码"
+            android:inputType="textPassword"
+            android:padding="4dp"
+            android:singleLine="true"
+            android:textColorHint="#AAAAAA"
+            android:textSize="18sp" >
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout 
+        android:id="@+id/liner_signup_verifypwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/liner_signup_pwd"
+        android:layout_marginTop="12dp"
+        android:orientation="horizontal" 
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp">
+
+        <TextView
+            android:background="@drawable/tv_login_leftradius"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="18sp"
+            android:text="@string/tv_signup_verifypwd" 
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"/>
+
+       <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/et_login_rightradius"
+            android:ems="10"
+            android:hint="确认密码"
+            android:inputType="textPassword"
+            android:padding="4dp"
+            android:singleLine="true"
+            android:textColorHint="#AAAAAA"
+            android:textSize="18sp" >
+        </EditText>
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:id="@+id/liner_signup_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/liner_signup_verifypwd"
+        android:layout_marginTop="12dp"
+        android:orientation="horizontal" 
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp">
+
+        <TextView
+            android:background="@drawable/tv_login_leftradius"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="18sp"
+            android:text="@string/tv_signup_email" 
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/et_login_rightradius"
+            android:ems="10"
+            android:hint="邮箱"
+            android:inputType="text"
+            android:padding="4dp"
+            android:singleLine="true"
+            android:textColorHint="#AAAAAA"
+            android:textSize="18sp" >
+        </EditText>
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/liner_signup_btnsignupnow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/liner_signup_email"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginTop="16dp" >
+        
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="@drawable/btn_login"
+            android:gravity="center"
+            android:text="@string/btn_signup_signupnow"
+            android:textSize="18sp" />
+       
+    </LinearLayout>
+
+
+    
+</RelativeLayout>

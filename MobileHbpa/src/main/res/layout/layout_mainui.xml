@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <!--顶部-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/mainui_bg_bottom_top" >
+
+        <TextView
+            android:id="@+id/tv_mainui_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/mainui_tab_zhangzishi"
+            android:textColor="#fff"
+            android:textSize="20sp" 
+            android:gravity="center"
+            android:padding="8dp"/>
+        
+    </LinearLayout>
+    
+    <android.support.v4.view.ViewPager
+        android:id="@+id/mainui_mainviewpager"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp">
+        
+    </android.support.v4.view.ViewPager>
+    
+    <!--底部按钮-->
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:orientation="horizontal">
+        <RadioGroup
+                android:id="@+id/mainui_tab_group"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_gravity="bottom"
+                android:background="@drawable/mainui_bg_bottom_top"
+                android:gravity="bottom"
+                android:orientation="horizontal"
+                android:paddingTop="2.0dip" >
+
+                <RadioButton
+                    android:id="@+id/mainui_tab_zhangzishi"
+                    style="@style/mainui_tab_bottom"
+                    android:checked="true"
+                    android:drawableTop="@drawable/mainui_navigation_zhangzishi"
+                    android:text="@string/mainui_tab_zhangzishi" />
+
+                <RadioButton
+                    android:id="@+id/mainui_tab_aishenghuo"
+                    style="@style/mainui_tab_bottom"
+                    android:drawableTop="@drawable/mainui_navigation_aishenghuo"
+                    android:text="@string/mainui_tab_aishenghuo" />
+
+                <RadioButton
+                    android:id="@+id/mainui_tab_zuoxueba"
+                    style="@style/mainui_tab_bottom"
+                    android:drawableTop="@drawable/mainui_navigation_zuoxueba"
+                    android:text="@string/mainui_tab_zuoxueba" />
+
+                <RadioButton
+                    android:id="@+id/mainui_tab_geren"
+                    style="@style/mainui_tab_bottom"
+                    android:drawableTop="@drawable/mainui_navigation_geren"                   
+                    android:text="@string/mainui_tab_geren" />
+
+            </RadioGroup>
+    </LinearLayout>
+
+
+</LinearLayout>

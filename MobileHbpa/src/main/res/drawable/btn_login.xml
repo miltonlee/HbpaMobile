@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<selector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:constantSize="true"> 
+   <!-- 获得焦点时的状态 -->
+    <item android:state_focused="true"> 
+        <shape> 
+            <solid android:color="@color/btn_login_pressed"/>
+            <corners android:radius="5dp"/>
+            <padding
+                android:left = "5dp"      
+                android:top = "5dp"      
+                android:right = "5dp"      
+                android:bottom = "5dp" />
+        </shape> 
+    </item> 
+    <!-- 未按压时的状态 -->
+    <item android:state_enabled="true" android:state_pressed="false"> 
+         <shape> 
+            <solid android:color="@color/btn_login"/>
+            <corners android:radius="5dp"/>
+            <padding
+                android:left = "5dp"      
+                android:top = "5dp"      
+                android:right = "5dp"      
+                android:bottom = "5dp" />
+        </shape> 
+    </item> 
+    <!-- 按压时的状态 -->
+    <item android:state_enabled="true" android:state_pressed="true"> 
+         <shape> 
+            <solid android:color="@color/btn_login_pressed"/>
+            <corners android:radius="5dp"/>
+            <padding
+                android:left = "5dp"      
+                android:top = "5dp"      
+                android:right = "5dp"      
+                android:bottom = "5dp" />
+        </shape>  
+    </item> 
+    <!-- 不可用时的按压状态 -->
+    <item android:state_enabled="false" android:state_pressed="true"> 
+        <shape> 
+            <solid android:color="@color/btn_unable"/>
+            <corners android:radius="5dp"/>
+            <padding
+                android:left = "5dp"      
+                android:top = "5dp"      
+                android:right = "5dp"      
+                android:bottom = "5dp" />
+        </shape> 
+    </item> 
+    <!-- 默认状态 -->
+    <item> 
+        <shape> 
+            <solid android:color="@color/btn_login"/>
+            <corners android:radius="5dp"/>
+            <padding
+                android:left = "5dp"      
+                android:top = "5dp"      
+                android:right = "5dp"      
+                android:bottom = "5dp" />
+        </shape> 
+    </item> 
+</selector>

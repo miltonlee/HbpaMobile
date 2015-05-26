@@ -1,0 +1,25 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <style name="fadin" parent="@android:anim/fade_in">
+        <item name="android:windowNoTitle">true</item>       
+    </style>
+    
+    <!--主界面RadioButton样式-->
+    <style name="mainui_tab_bottom">
+        <item name="android:textSize">@dimen/mainui_bottom_tab_font_size</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:gravity">center_horizontal</item>
+        <!-- <item name="android:background">#0000</item> -->
+        <item name="android:paddingTop">@dimen/mainui_bottom_tab_padding_up</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:button">@null</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:drawablePadding">@dimen/mainui_bottom_tab_padding_drawable</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+
+</resources>

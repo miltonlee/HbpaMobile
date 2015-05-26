@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="btn_login">#4876FF</color>
+    <color name="btn_login_pressed">#4169E1</color>
+    <color name="btn_unable">#cfcfcf</color>
+    <color name="btn_unable_pressed">#b5b5b5</color>
+    <color name="mainui_tab_text_checked">#fff</color>
+    <color name="mainui_tab_text">#000</color>
+</resources>
