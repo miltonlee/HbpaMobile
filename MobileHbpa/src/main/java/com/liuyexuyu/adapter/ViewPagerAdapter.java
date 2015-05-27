@@ -22,7 +22,7 @@ class ViewPagerAdapter extends PagerAdapter {
         return Integer.MAX_VALUE;  
     }  
     /**
-     * 判断出去的view是否等于进来的view 如果为true直接复用 
+     * 判断出去的view是否等于进来的view 如果为true直接复用。。。
      */  
     @Override  
     public boolean isViewFromObject(View arg0, Object arg1) {  
@@ -30,7 +30,7 @@ class ViewPagerAdapter extends PagerAdapter {
     }  
     /** 
      * 销毁预加载以外的view对象, 会把需要销毁的对象的索引位置传进来，就是position， 
-     * 因为mImageViewList只有五条数据，而position将会取到很大的值， 
+     * 因为mImageViewList只有五条数据，而position将会取到很大的值。
      * 所以使用取余数的方法来获取每一条数据项。 
      */  
     @Override  
