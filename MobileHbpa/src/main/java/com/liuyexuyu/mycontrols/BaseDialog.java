@@ -13,5 +13,4 @@ public class BaseDialog extends Dialog implements DialogInterface {
 	public BaseDialog(Context context,int srcTheme) {
 		super(context, srcTheme);
 	}
-
 }
